@@ -20,7 +20,7 @@ async function parse() {
       html,
       '/* start */',
       '/* end */',
-      `var BLOOD_RECORD = ${JSON.stringify(jsonArray)}`,
+      `var BLOOD_RECORD = ${JSON.stringify(jsonArray.reverse())}`,
     ),
   );
 }
