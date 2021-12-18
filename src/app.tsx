@@ -13,7 +13,10 @@ export const App = () => {
   return (
     <Container>
       <BloodPressureChart data={BLOOD_RECORD} />
-      <a href="https://github.com/Saber2pr/blood-pressure-chart/edit/master/BLOOD_RECORD.csv">
+      <a
+        target="_blank"
+        href="https://github.com/Saber2pr/blood-pressure-chart/edit/master/BLOOD_RECORD.csv"
+      >
         提交数据
       </a>
     </Container>
