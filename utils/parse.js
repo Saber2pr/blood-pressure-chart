@@ -11,7 +11,6 @@ async function parse() {
   const html = buf.toString();
 
   const jsonArray = await csv({
-    noheader: true,
     output: 'csv',
   }).fromFile(csvFilePath);
 

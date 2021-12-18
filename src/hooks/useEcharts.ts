@@ -28,7 +28,6 @@ export function useEcharts(
     let chart: ECharts = null;
     if (echarts) {
       chart = echarts.init(ref.current);
-      console.log('chart', chart, ref.current);
       if (typeof options === 'function') {
         Promise.resolve(options(chart)).then(() => setLoading(false));
       } else {
