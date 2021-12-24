@@ -1,8 +1,9 @@
 import * as echarts from 'echarts';
-import { ECharts } from 'echarts';
 import React, { DependencyList, useEffect, useRef, useState } from 'react';
 
 type UseEchartsResult = [React.MutableRefObject<HTMLDivElement>, boolean];
+
+type ECharts = echarts.ECharts
 
 export function useEcharts(
   callback: (chart: ECharts) => any,
