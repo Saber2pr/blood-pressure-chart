@@ -5,7 +5,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack -w",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
-    "build": "cross-env NODE_ENV=production webpack",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider cross-env NODE_ENV=production webpack",
     "record": "node utils/parse"
   },
   "author": "saber2pr",
